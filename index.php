@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
-<body>
-<?php
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-?>
-Welcome <?php echo $_POST["name"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
-
-</body>
+    <head>
+        <title>PHP Testing</title>
+    </head>
+    <body>
+        <form action="index.php" method="POST">
+            <p>Your name: <input type="text" name="name" /></p>
+            <p>Your email: <input type="text" name="email" /></p>
+            <p><input type="submit" name="sub"/></p>
+        </form>
+    </body>
 </html>
